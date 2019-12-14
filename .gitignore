@@ -103,3 +103,10 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+# visual studio code workspace
+*.code-workspace
+
+# bank2ynab specific stuff
+user_configuration.conf
+test-data/temp-test.conf
