@@ -12,15 +12,15 @@ jobs:
     
     steps:
     - uses: actions/checkout@v1
-    - name: Update master
+    - name: Update develop
       env: 
         GITHUB_TOKEN : ${{ secrets.PUSH_TOKEN }}
       run: |
         git remote set-url origin https://Kukkerem:"${GITHUB_TOKEN}"@github.com/Kukkerem/bank2ynab.git
         git remote add upstream https://github.com/bank2ynab/bank2ynab.git
         git remote update
-        git checkout --track origin/master
+        git checkout --track origin/develop
         git config --global user.email "kukkerem@gmail.com"
         git config --global user.name "Kukkerem"
-        git merge upstream/master
+        git merge upstream/develop
         git push | true
