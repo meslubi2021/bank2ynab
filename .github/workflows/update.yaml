@@ -16,7 +16,7 @@ jobs:
       env: 
         GITHUB_TOKEN : ${{ secrets.PUSH_TOKEN }}
       run: |
-        git remote set-url origin https://Kukkerem:"${PUSH_TOKEN}"@github.com/Kukkerem/bank2ynab.git
+        git remote set-url origin https://Kukkerem:"${GITHUB_TOKEN}"@github.com/Kukkerem/bank2ynab.git
         git remote add upstream https://github.com/bank2ynab/bank2ynab.git
         git remote update
         git checkout --track origin/master
