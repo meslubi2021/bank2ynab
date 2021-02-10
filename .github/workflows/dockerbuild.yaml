@@ -1,0 +1,25 @@
+name: Docker Build and Push
+
+on:
+  workflow_dispatch:
+
+jobs:
+  buildx:
+    runs-on: ubuntu-latest
+    steps:
+      -
+        name: Checkout
+        uses: actions/checkout@v2
+      -
+        uses: docker/setup-buildx-action@v1
+        id: buildx
+        with:
+          install: true
+      -
+        name: Build
+        env:
+          DOCKER_HUB: ${{ secrets.DOCKER_HUB }}
+        run: |
+          docker login -u kukker -p "${DOCKER_TOKEN}"
+          docker pull kukker/bank2ynab:latest
+          docker build --platform linux/amd64,linux/arm64,linux/arm/v7 --tag kukker/bank2ynab:latest . --push
