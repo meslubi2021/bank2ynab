@@ -22,4 +22,5 @@ jobs:
         run: |
           docker login -u kukker -p "${DOCKER_TOKEN}"
           # docker pull kukker/bank2ynab:latest
-          docker build --platform linux/amd64,linux/arm64,linux/arm/v7 --tag kukker/bank2ynab:latest . --push
+          # docker build --platform linux/amd64,linux/arm64,linux/arm/v7 --tag kukker/bank2ynab:latest . --push
+          docker build --tag kukker/bank2ynab:latest . --push
