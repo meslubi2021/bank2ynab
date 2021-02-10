@@ -18,7 +18,7 @@ jobs:
       -
         name: Build
         env:
-          DOCKER_HUB: ${{ secrets.DOCKER_HUB }}
+          DOCKER_TOKEN: ${{ secrets.DOCKER_HUB }}
         run: |
           docker login -u kukker -p "${DOCKER_TOKEN}"
           docker pull kukker/bank2ynab:latest
