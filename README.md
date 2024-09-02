@@ -186,6 +186,7 @@ Here is a list of the banks and their formats that we already support. Note that
 1. Revolut
 1. SE Handelsbanken
 1. SE Länsförsäkringar checking
+2. SE Morrow Bank
 1. SE Nordea - internetbanken.privat.nordea.se
 1. SE Nordea - netbank.nordea.se
 1. SE SEB Skandinaviska Enskilda Banken
