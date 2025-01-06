@@ -32,7 +32,10 @@ class Handelsbanken(BankHandler):
                 cells = row.split(";")
                 new_row: list[str] = list()
                 for cell in cells:
-                    es = re.findall(r"\\>.*?\\<", cell)
+                    # This regex was updated and broken in commit 124ae54.
+                    # es = re.findall(r"\\>.*?\\<", cell)
+                    # Can probably clean up the regex a bit though...
+                    es = re.findall(r"\>.*?\<", cell)
                     while "><" in es:
                         es.remove("><")
                         for n, i in enumerate(es):
