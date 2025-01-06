@@ -177,15 +177,18 @@ Here is a list of the banks and their formats that we already support. Note that
 1. NL Rabobank
 1. NL Rabobank-2018
 1. NL Rabobank Credit Card
+1. NL RegioBank
 1. NO DNB
 1. NO Sparebank 1 VISA
 1. Personal Capital
 1. PL Alior Bank
 1. PL mBank
 1. PL PKO BP
+1. PL Bank Pekao
 1. Revolut
 1. SE Handelsbanken
 1. SE Länsförsäkringar checking
+1. SE Morrow Bank
 1. SE Nordea - internetbanken.privat.nordea.se
 1. SE Nordea - netbank.nordea.se
 1. SE SEB Skandinaviska Enskilda Banken
@@ -196,6 +199,8 @@ Here is a list of the banks and their formats that we already support. Note that
 1. SG OCBC Bank
 1. SG OCBC Bank Credit Card
 1. SG POSB savings
+1. SG UOB Savings Account
+1. SG UOB Credit Card
 1. SK Tatra Banka
 1. SK VUB
 1. UK Co-operative Bank
